@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: slicefree
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
