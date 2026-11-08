@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SliceFree — Cut the moment</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><a class="brand" href="/">◒ <span>SliceFree</span></a><span class="tag">FREE CLIP TOOL</span></header>
+<main>
+<section class="hero"><div class="eyebrow">✦ MADE FOR CREATORS</div><h1>Cut the moment.<br><em>Skip the hour.</em></h1>
+<p>Paste a video link, choose your moment, and export the clip in the quality you need.</p></section>
+<section class="card">
+<label class="label" for="url">YOUTUBE VIDEO URL</label>
+<div class="urlrow"><input id="url" type="url" placeholder="https://www.youtube.com/watch?v=…" autocomplete="url"><button id="load">Get video <span>→</span></button></div>
+<div id="status" class="status"></div>
+<div id="editor" hidden>
+<div class="videohead"><img id="thumb" alt=""><div><strong id="title"></strong><small id="duration"></small></div></div>
+<div class="sectiontitle">CLIP RANGE <span id="selected">0:00 selected</span></div>
+<div class="times"><label>START <input id="start" type="number" min="0" step="0.1" value="0"></label><label>END <input id="end" type="number" min="0" step="0.1" value="15"></label></div>
+<div class="range"><input id="rangeStart" type="range" min="0" max="100" value="0"><input id="rangeEnd" type="range" min="0" max="100" value="15"></div>
+<div class="sectiontitle">FORMAT</div><div class="choices" id="formats"><button class="choice active" data-value="mp4">MP4 <small>Universal</small></button><button class="choice" data-value="mov">MOV <small>Apple</small></button><button class="choice" data-value="mp3">MP3 <small>Audio</small></button><button class="choice" data-value="m4a">M4A <small>Audio</small></button></div>
+<div class="sectiontitle">QUALITY <span>Highest available source quality</span></div>
+<div class="choices qualities" id="qualities"><button class="choice active" data-value="best">Best</button><button class="choice" data-value="2160">4K</button><button class="choice" data-value="1440">1440p</button><button class="choice" data-value="1080">1080p</button><button class="choice" data-value="720">720p</button><button class="choice" data-value="480">480p</button></div>
+<label class="confirm"><input id="authorized" type="checkbox"> I own this video or have permission to download and edit it.</label>
+<button id="export" class="export">Export clip <span>↗</span></button>
+<p class="fineprint">No artificial resolution paywall. Output quality depends on the source video and available server resources. Use only content you own or are authorized to use.</p>
+</div>
+</section>
+<section class="steps"><div><b>01</b><strong>Paste a link</strong><p>Start with a public video you have rights to use.</p></div><div><b>02</b><strong>Pick your moment</strong><p>Set exact start and end times in seconds.</p></div><div><b>03</b><strong>Export</strong><p>Choose a format and the best source quality.</p></div></section>
+</main><footer>SliceFree · Independent creator tool · Not affiliated with YouTube.</footer>
+<script src="/static/app.js"></script>
+</body></html>
